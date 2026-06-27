@@ -99,14 +99,46 @@ sudo apt install unzip -y
 unzip "*.zip"
 ```
 
-## 🖥️ How to Use
-Truy cập: Mở Chrome và truy cập http://localhost:8080.
-Setup: Tạo Project -> Thêm các Labels (Vd: ape, can, cat...) -> Tạo Task.
-Upload: Chọn ảnh từ thư mục ~/lm/test/000001/rgb/.
-AI Annotation:
-Mở giao diện gán nhãn -> Chọn biểu tượng Magic Wand ✨ (AI Tools) -> Segment Anything.
-Chuột trái để thêm vùng vật thể, Chuột phải để loại bỏ vùng thừa. Nhấn Enter để hoàn thành.
-3D Annotation: Sử dụng công cụ Cuboid để vẽ bao quanh vật thể xác định 6D Pose.
+---
+
+## 🖥️ Hướng dẫn sử dụng chi tiết (Workflow)
+
+Để bắt đầu gán nhãn dữ liệu BOP với CVAT và AI hỗ trợ, hãy thực hiện theo quy trình 5 bước sau:
+
+### 1. Khởi động & Đăng nhập
+*   **Trình duyệt:** Sử dụng **Google Chrome** (Bắt buộc để đảm bảo tính năng AI hoạt động mượt mà).
+*   **Địa chỉ:** Truy cập `http://localhost:8080`.
+*   **Đăng nhập:** Sử dụng tài khoản **Superuser** đã tạo ở Bước 2.
+
+### 2. Thiết lập Cấu trúc dự án (Project & Labels)
+*   **Create Project:** Nhấn nút `+` -> `Create a new project`. Đây là "thùng chứa" lớn để quản lý nhiều Task.
+*   **Setup Labels:** Trong mục **Labels**, thêm tên các vật thể bạn cần gán nhãn (Ví dụ: `ape`, `can`, `cat`...). Việc định nghĩa nhãn ở cấp Project sẽ giúp đồng bộ hóa cho tất cả các Task bên trong.
+
+### 3. Tạo Task & Nhập dữ liệu (Data Import)
+*   **Create Task:** Vào Project vừa tạo -> Nhấn `Create a new task`.
+*   **Upload Data:** 
+    *   Chọn tab **Local files**.
+    *   Tìm đến thư mục chứa ảnh BOP đã giải nén: `~/lm/test/000001/rgb/`.
+    *   **Lưu ý:** Chỉ nên chọn khoảng 50-100 ảnh cho lần thử đầu tiên để tránh treo trình duyệt.
+*   **Submit:** Nhấn `Submit` và đợi hệ thống xử lý ảnh. Sau đó, nhấn vào số **Job** hiện ra để bắt đầu làm việc.
+
+### 4. Gán nhãn tự động với AI (SAM - Segment Anything)
+Đây là công cụ mạnh nhất giúp bạn tạo Mask (vùng chọn) chỉ trong vài giây:
+1.  Nhấn phím tắt **`I`** hoặc chọn biểu tượng **Magic Wand ✨ (AI Tools)** ở thanh công cụ bên trái.
+2.  Chọn model **Segment Anything**.
+3.  **Thao tác chuột:**
+    *   **Chuột trái (Điểm xanh):** Click vào thân vật thể để báo cho AI biết vùng cần lấy.
+    *   **Chuột phải (Điểm đỏ):** Click vào vùng nền hoặc vùng bị lấn sang vật thể khác để loại bỏ.
+4.  **Hoàn thành:** Sau khi AI bao quanh đúng vật thể, nhấn **Enter** để lưu vùng chọn dưới dạng Đa giác (Polygon).
+
+### 5. Gán nhãn 3D Cuboid (Cho 6D Pose Estimation)
+Để xác định vị trí và hướng của vật thể trong không gian 3D (phục vụ bộ dữ liệu BOP):
+1.  Chọn biểu tượng **Draw new cuboid** (Khối lập phương) ở thanh công cụ.
+2.  Vẽ một khối hộp bao quanh vật thể trên ảnh 2D.
+3.  Điều chỉnh các điểm nắm (anchors) để xoay và kéo giãn khối hộp sao cho các cạnh của khối 3D khớp chính xác với phối cảnh của vật thể.
+
+---
+💡 **Mẹo nhỏ:** Nhấn **`Ctrl + S`** thường xuyên để lưu tiến độ công việc lên server, tránh mất dữ liệu khi trình duyệt gặp sự cố.
 
 
 
