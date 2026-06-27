@@ -108,6 +108,17 @@ Mở giao diện gán nhãn -> Chọn biểu tượng Magic Wand ✨ (AI Tools) 
 Chuột trái để thêm vùng vật thể, Chuột phải để loại bỏ vùng thừa. Nhấn Enter để hoàn thành.
 3D Annotation: Sử dụng công cụ Cuboid để vẽ bao quanh vật thể xác định 6D Pose.
 
+---
+
+## 📺 Demo Video
+
+Dưới đây là video hướng dẫn sử dụng CVAT kết hợp với AI SAM trên bộ dữ liệu BOP:
+
+[![Hướng dẫn sử dụng CVAT](https://img.youtube.com/vi/ID_VIDEO_CUA_BAN/maxresdefault.jpg)](https://www.youtube.com/watch?v=ID_VIDEO_CUA_BAN)
+
+> 💡 *Nhấn vào ảnh để xem video hướng dẫn trên YouTube.*
+
+---
 ## 🛠 Maintenance
 Management Commands
 ```bash
