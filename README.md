@@ -82,7 +82,7 @@ docker tag alpine:3.17 gcr.io/iguazio/alpine:3.17
 ```
 ### Phần 3: Tải Dataset, Hướng dẫn sử dụng và Bảo trì
 
-## 📊 Step 4: Download BOP Dataset (Linemod)
+## 📊 Step 4: Download BOP Dataset (Linemod) (Tùy thuộc vào dataset sẽ có cách tải khác nhau)
 
 Tải bản rút gọn của bộ dữ liệu Linemod (10.5GB) thay vì bản đầy đủ (34GB).
 
