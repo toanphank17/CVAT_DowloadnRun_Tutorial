@@ -108,21 +108,15 @@ Mở giao diện gán nhãn -> Chọn biểu tượng Magic Wand ✨ (AI Tools) 
 Chuột trái để thêm vùng vật thể, Chuột phải để loại bỏ vùng thừa. Nhấn Enter để hoàn thành.
 3D Annotation: Sử dụng công cụ Cuboid để vẽ bao quanh vật thể xác định 6D Pose.
 
----
 
-## 📺 Video Tutorial: Polygon Annotation in CVAT
 
-Dưới đây là video hướng dẫn chi tiết cách gán nhãn đa giác (Polygon) và xuất dữ liệu:
+https://github.com/user-attachments/assets/c0d23408-61ec-418d-8f24-1b430a34ed3a
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=FOfUueO-NnI">
-    <img src="https://img.youtube.com/vi/FOfUueO-NnI/hqdefault.jpg" alt="CVAT Tutorial" width="600" border="10" />
-  </a>
-</p>
 
-> 💡 *Nhấn vào ảnh trên để xem video trực tiếp trên YouTube.*
 
----
+
+
+
 ## 🛠 Maintenance
 Management Commands
 ```bash
