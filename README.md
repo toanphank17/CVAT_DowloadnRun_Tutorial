@@ -3,7 +3,8 @@
 Hướng dẫn chi tiết cách thiết lập hệ thống gán nhãn dữ liệu **CVAT** (Computer Vision Annotation Tool), tích hợp công cụ AI **Segment Anything Model (SAM)** và tải dữ liệu mẫu từ **BOP Challenge**.
 
 ---
-
+Task: Detection và Segmentation, tích hợp công cụ AI **Segment Anything Model (SAM)** và tải dữ liệu mẫu từ **BOP Challenge**.
+Tham khảo từ nguồn: https://docs.cvat.ai/docs/
 ## 📋 Requirements
 
 ### Software
