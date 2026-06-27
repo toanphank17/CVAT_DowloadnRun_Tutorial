@@ -99,7 +99,7 @@ sudo apt install unzip -y
 unzip "*.zip"
 ```
 
-🖥️ How to Use
+## 🖥️ How to Use
 Truy cập: Mở Chrome và truy cập http://localhost:8080.
 Setup: Tạo Project -> Thêm các Labels (Vd: ape, can, cat...) -> Tạo Task.
 Upload: Chọn ảnh từ thư mục ~/lm/test/000001/rgb/.
@@ -108,7 +108,7 @@ Mở giao diện gán nhãn -> Chọn biểu tượng Magic Wand ✨ (AI Tools) 
 Chuột trái để thêm vùng vật thể, Chuột phải để loại bỏ vùng thừa. Nhấn Enter để hoàn thành.
 3D Annotation: Sử dụng công cụ Cuboid để vẽ bao quanh vật thể xác định 6D Pose.
 
-🛠 Maintenance
+## 🛠 Maintenance
 Management Commands
 ```bash
 # Dừng CVAT (Tiết kiệm tài nguyên máy)
